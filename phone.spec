@@ -2,33 +2,34 @@ Summary:	Voice over IP
 Name:		phone
 Version:	002
 Release:	1
+License:	GPL
 Group:		Applications/Communications
 Group(pl):	Aplikacje/Komunikacja
-License:	GPL
-Source0:	%{name}-%{version}.tgz
+Source0:	http://www.linuxmotors.com/phone/%{name}-%{version}.tgz
+URL:		http://www.linuxmotors.com/phone/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Voice over IP
+Voice over IP.
 
 %prep
-%setup  -q
+%setup -q
 
 %build
-%{__make} CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O -g}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_bindir}
+
+install phone $RPM_BUILD_ROOT%{_bindir}
 
 gzip -9nf README 
-
-install -d		$RPM_BUILD_ROOT%{_bindir}
-install phone	 	$RPM_BUILD_ROOT%{_bindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.gz
+%doc *.gz
 %attr(755,root,root) %{_bindir}/*
