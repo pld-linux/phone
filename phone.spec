@@ -33,7 +33,7 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 
 install phone $RPM_BUILD_ROOT%{_bindir}
 
-gzip -9nf README 
+gzip -9nf README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
