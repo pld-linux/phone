@@ -5,8 +5,6 @@ Version:	002
 Release:	2
 License:	GPL
 Group:		Applications/Communications
-Group(de):	Applikationen/Kommunikation
-Group(pl):	Aplikacje/Komunikacja
 Source0:	http://www.linuxmotors.com/phone/%{name}-%{version}.tgz
 URL:		http://www.linuxmotors.com/phone/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
