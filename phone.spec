@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://www.linuxmotors.com/phone/%{name}-%{version}.tgz
+# Source0-md5:	5589481785d43f2077bc46f87cd91f2d
 URL:		http://www.linuxmotors.com/phone/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
