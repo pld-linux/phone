@@ -2,7 +2,7 @@ Summary:	Voice over IP
 Summary(pl):	G³os po IP
 Name:		phone
 Version:	002
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://www.linuxmotors.com/phone/%{name}-%{version}.tgz
