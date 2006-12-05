@@ -26,7 +26,9 @@ u¿ywaj±c tego samego ³±cza.
 %setup -q
 
 %build
-%{__make} CFLAGS="%{rpmcflags}"
+%{__make} \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -40,5 +42,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
+%doc Changelog README
 %attr(755,root,root) %{_bindir}/*
