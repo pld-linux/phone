@@ -1,5 +1,5 @@
 Summary:	Voice over IP
-Summary(pl):	G³os po IP
+Summary(pl.UTF-8):   GÅ‚os po IP
 Name:		phone
 Version:	002
 Release:	3
@@ -16,11 +16,11 @@ sound board, speakers and a microphone, and a 24000 bits-per-second
 connection to the internet or better, you can talk with other people
 with the same setup over the internet.
 
-%description -l pl
-G³os po IP - internetowy telefon dla Linuksa. Maj±c Linuksa, kartê
-d¼wiêkow± full-duplex, g³o¶niki i mikrofon oraz po³±czenie z
-Internetem co najmniej 24000 bitów/sekundê, mo¿esz rozmawiaæ z lud¼mi
-u¿ywaj±c tego samego ³±cza.
+%description -l pl.UTF-8
+GÅ‚os po IP - internetowy telefon dla Linuksa. MajÄ…c Linuksa, kartÄ™
+dÅºwiÄ™kowÄ… full-duplex, gÅ‚oÅ›niki i mikrofon oraz poÅ‚Ä…czenie z
+Internetem co najmniej 24000 bitÃ³w/sekundÄ™, moÅ¼esz rozmawiaÄ‡ z ludÅºmi
+uÅ¼ywajÄ…c tego samego Å‚Ä…cza.
 
 %prep
 %setup -q
